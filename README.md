@@ -67,7 +67,7 @@ Instead of building manual intake workflows, the university deploys the followin
 ```mermaid
 flowchart TD
 
-A[SFTP Client (College/University)] -->|Upload Certificate PDF| B[Azure Blob Storage <br> SFTP Enabled Container]
+A[SFTP Client College/University] -->|Upload Certificate PDF| B[Azure Blob Storage <br> SFTP Enabled Container]
 
 B -->|Blob Created Event| C[Event Grid]
 
@@ -76,11 +76,11 @@ C -->|Trigger| D[Azure Function: ProcessCertificate]
 D -->|Read PDF| B
 D -->|Send to Document AI| E[Azure Document Intelligence]
 
-E -->|Extracted Metadata (JSON)| D
+E -->|Extracted Metadata JSON| D
 
 D -->|Insert Metadata + Blob URL| F[Azure SQL Database]
 
-G[REST API (Azure App Service/Function)] -->|Query Metadata| F
+G[REST API Azure App Service/Function] -->|Query Metadata| F
 G -->|Generate SAS URI| B
 
 H[Admin/Student Portal] -->|View Certificate Metadata| G
