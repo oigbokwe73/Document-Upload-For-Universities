@@ -9,7 +9,7 @@ Below is a **detailed, implementation-ready use case** tailored to the workflow 
 
 ## **Business Problem**
 
-Colleges and universities need a secure, automated method for verifying student academic certificates (transcripts, diplomas, vocational certificates). Many institutions still manually upload documents into systems for validation, creating bottlenecks and increasing operational costs.
+Employers need a secure, automated method for verifying student academic certificates (transcripts, diplomas, vocational certificates). Many institutions still manually upload documents into systems for validation, creating bottlenecks and increasing operational costs.
 
 The university wants to **automate certificate ingestion, scanning, metadata extraction, verification, and storage**, allowing administrators and students to view certificate metadata and the original document through a secure REST API.
 
